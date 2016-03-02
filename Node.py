@@ -9,4 +9,6 @@ class Node:
             self._precedence = 1
         elif item == "(" or "[":
             self.precedence = 0
+        else:
+            self.precedence = None
         self._next = next
