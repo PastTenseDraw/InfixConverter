@@ -14,13 +14,13 @@ class Stack:
         self._tos = None
 
     def push(self, item):
-        head = Node(item, self.tos)
+        head = Node(item, self._tos)
         self._tos = head
 
 
     def pop(self):
-        new_head = self.tos.next
-        old_head = self.tos
+        new_head = self._tos.next
+        old_head = self._tos
         self._tos.next = None
         self._tos = new_head
         return old_head
