@@ -1,4 +1,12 @@
+# stack.py
+
+# Name: Drew Baker      Date Assigned: 02/29/16
 #
+# Course: CSE 1384  Sec H01     Date Due: 03/03/16
+#
+# File name: stack.py
+#
+# Program Description: Class for the stacks used in the infix converter program.
 from Node import Node
 
 class Stack:
