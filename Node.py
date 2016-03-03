@@ -1,4 +1,12 @@
+# Node.py
+
+# Name: Drew Baker      Date Assigned: 02/29/16
 #
+# Course: CSE 1384  Sec H01     Date Due: 03/03/16
+#
+# File name: Node.py
+#
+# Program Description: Node class for infix converter.
 
 class Node:
     def __init__(self, item, next):
