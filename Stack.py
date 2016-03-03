@@ -11,26 +11,26 @@ from Node import Node
 
 class Stack:
     def __init__(self):
-        self.tos = None
+        self._tos = None
 
     def push(self, item):
         head = Node(item, self.tos)
-        self.tos = head
+        self._tos = head
 
 
     def pop(self):
         new_head = self.tos.next
         old_head = self.tos
-        self.tos.next = None
-        self.tos = new_head
+        self._tos.next = None
+        self._tos = new_head
         return old_head
 
     def top(self):
-        return self.tos.data
+        return self._tos.data
 
     def size(self):
         size = 0
-        reference = self.tos
+        reference = self._tos
         while reference.next is not None:
             reference = reference.next
             size += 1
@@ -38,4 +38,5 @@ class Stack:
 
     def empty_stack(self):
 
-        return self.tos is None
+        if self.size() == 0:
+            return True
